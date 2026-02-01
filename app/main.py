@@ -31,3 +31,6 @@ app.include_router(router_api)
 @app.get("/test")
 async def test():
     return {"test": 111, 'project_name': "Tilde form handler"}
+
+
+# uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --log-level debug
